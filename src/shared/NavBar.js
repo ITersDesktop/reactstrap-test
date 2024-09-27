@@ -33,10 +33,13 @@ export default class AppNavBar extends React.Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
+                    <NavbarBrand href="/">Home</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
+                            <NavItem>
+                                <NavLink href="/our-services/">Our services</NavLink>
+                            </NavItem>
                             <NavItem>
                                 <NavLink href="/components/">Components</NavLink>
                             </NavItem>

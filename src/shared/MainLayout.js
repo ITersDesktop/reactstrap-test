@@ -1,8 +1,8 @@
-import {Button, Container} from "reactstrap";
+import {Button, Container, Col, Row} from "reactstrap";
 
 function BootstrapGridTest() {
     return (
-        <Container>
+        <Row><Col>
             <h1>Fluid Grid!</h1>
             <p>
                 This is a modified fluid which
@@ -12,7 +12,7 @@ function BootstrapGridTest() {
                 Submit
             </Button>
             <Button color="danger">Danger!</Button>
-        </Container>
+        </Col></Row>
     );
 }
 

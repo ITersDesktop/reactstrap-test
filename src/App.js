@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import AppNavBar from "./shared/NavBar";
 import BootstrapGridTest from "./shared/MainLayout";
+import ListOfFruits from './shared/ListItems';
+import { Container } from 'reactstrap';
 
 function App() {
   return (
@@ -21,7 +23,10 @@ function App() {
         </a>
       </header>
       <AppNavBar/>
-      <BootstrapGridTest/>
+      <Container>
+        <BootstrapGridTest/>
+        <ListOfFruits/>
+      </Container>
     </div>
   );
 }
